@@ -1,0 +1,33 @@
+{
+    "name": "apitalk",
+    "version": "0.0.1",
+    "authors": [
+        "Christian Kastbjerg <ckastbjerg@gmail.com>"
+    ],
+    "description": "Talk to the issuu public API",
+    "keywords": [
+        "issuu api"
+    ],
+    "license": "Custom",
+    "private": true,
+    "ignore": [
+        "**/.*",
+        "bower_components",
+        "js/bower",
+        "css",
+        "images"
+    ],
+    "dependencies": {
+        "chance": "latest",
+        "underscore": "latest",
+        "jquery": "latest",
+        "crypto": "latest",
+        "prettyPrint": "latest"
+    },
+    "install": {
+        "path": "src/vendor",
+        "sources": {
+            "prettyPrint": "bower_components/prettyPrint/prettyprint.js"
+        }
+    }
+}

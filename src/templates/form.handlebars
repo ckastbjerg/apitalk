@@ -1,0 +1,24 @@
+<form class="form-horizontal js-form" action="{{data.formAction}}" enctype="{{data.enctype}}" method="post">
+    <input type="hidden" name="action" value="{{data.action}}">
+    <input type="hidden" name="apiKey" value="{{data.apiKey}}">
+    <input type="hidden" name="format" value="json">
+    {{#if data.isUploadForm}}
+    <div class="form-group">
+        <label class="col-sm-3 control-label">Choose file</label>
+        <div class="col-sm-9">
+            <input class="form-control" type="file" name="file">
+        </div>
+    {{/if}}
+    </div>
+    {{#each data.elems}}
+    <div class="form-group">
+        <label class="col-sm-3 control-label">{{this.label}}</label>
+        <div class="col-sm-9">
+            <input class="form-control" placeholder="{{this.placeholder}}" type="{{this.type}}" name="{{this.name}}" value="{{this.value}}">
+        </div>
+    </div>
+    {{/each}}
+    <div class="col-sm-offset-3 col-sm-9">
+        <button type="submit" class="btn btn-default">Submit</button>
+    </div>
+</form>

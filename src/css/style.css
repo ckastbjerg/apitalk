@@ -1,0 +1,47 @@
+.settings.js-fixed {
+    position: fixed;
+    top: 10px;
+    left: 0;
+}
+
+label {
+    text-transform: capitalize;
+}
+
+.rsp {
+    width: 100%;
+    padding: 9px 12px;
+    background: #1c252b;
+    border-radius: 5px;
+    margin-top: 12px;
+}
+
+.rsp__row {
+    overflow: hidden;
+}
+
+.rsp__row:nth-child(n+2) {
+    margin-top: 20px;
+}
+
+.rsp__cell {
+    padding: 2px;
+    overflow: hidden;
+    border-bottom: none;
+}
+
+.rsp__label {
+    word-break: break-all;
+    font-weight: bold;
+    width: 20%;
+    float: left;
+}
+
+.rsp__value {
+    width: 80%;
+    float: right;
+}
+
+.rsp__value.-top {
+    color: red;
+}

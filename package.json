@@ -1,0 +1,15 @@
+{
+    "private": true,
+    "devDependencies": {
+        "beefy": "^2.1.3",
+        "watchify": "^2.3.0",
+        "browserify-handlebars": "latest",
+        "bower": "latest",
+        "bower-installer": "latest"
+    },
+    "dependencies": {
+        "browserify": "~8.1.3",
+        "handlebars": "~1.3.0",
+        "jquery": "~1.11.2"
+    }
+}
